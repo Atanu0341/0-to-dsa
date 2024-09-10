@@ -2,20 +2,20 @@
 using namespace std;
 
 int main(){
-    // int count = 1;
 
-    // for(int row = 1; row<=5; row++){
+    // for(char row = 'a'; row<='e'; row++){
 
     //     for(int cols = 1; cols<=5; cols++){
-    //         cout<<count++<<" ";
+    //         cout<<row<<" ";
     //     }
     //     cout<<endl;
     // }
 
     for(int row = 1; row<=5; row++){
-
+        
+        char name = 'a'+row-1;
         for(int cols = 1; cols<=5; cols++){
-            cout<<(row-1)*5+cols<<" ";
+            cout<<name<<" ";
         }
         cout<<endl;
     }

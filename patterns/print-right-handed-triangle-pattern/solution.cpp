@@ -3,9 +3,9 @@ using namespace std;
 
 int main() {
     
-    for(int row = 5; row>=1; row--){
-        for(int cols = 5; cols>=row; cols--){
-            cout<<cols<<" ";
+     for(int row = 1; row<=5; row++){
+        for(int cols = 1; cols<=row; cols++){
+            cout<<"*"<<" ";
         }
         cout<<endl;
     }

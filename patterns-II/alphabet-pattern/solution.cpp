@@ -13,8 +13,8 @@ int main() {
             cout<<" ";
         }
         // star print
-        for(int cols = 1; cols<=row; cols++){
-            cout<<"*           ";
+        for(char name = 'A'; name<='A'+row-1; name++){
+            cout<<name;
         }
         cout<<endl;
     }

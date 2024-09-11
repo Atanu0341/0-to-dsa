@@ -14,7 +14,7 @@ int main() {
         }
         // star print
         for(int cols = 1; cols<=row; cols++){
-            cout<<"*           ";
+            cout<<"*";
         }
         cout<<endl;
     }

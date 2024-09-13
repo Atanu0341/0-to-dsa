@@ -8,7 +8,7 @@ int main() {
     cin>>num;
     
     // 1st half
-    for (int row = 1; row<=num; row++) {
+    for (int row = num; row>=1; row--) {
         // print star
         for (int cols = 1; cols<=row; cols++){
             cout<<"*";
@@ -25,7 +25,7 @@ int main() {
     }
 
     // 2nd half
-    for (int row = num-1; row>=1; row--) {
+    for (int row = 1; row<=num; row++) {
         // print star
         for (int cols = 1; cols<=row; cols++){
             cout<<"*";
@@ -40,7 +40,6 @@ int main() {
         }
         cout << endl;
     }
-
 
     return 0;
 }

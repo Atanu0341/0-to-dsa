@@ -4,43 +4,11 @@ using namespace std;
 int main() {
 
     int num;
-    cout<<"Enter the number of rows for the pattern: ";
+    cout<<"Enter the number : ";
     cin>>num;
     
-    // 1st half
-    for (int row = 1; row<=num; row++) {
-        // print star
-        for (int cols = 1; cols<=row; cols++){
-            cout<<"*";
-        }
-        // print space
-        for (int cols = 1; cols<=2*num-2*row; cols++){
-            cout<<" ";
-        }
-        // print star
-        for (int cols = 1; cols<=row; cols++){
-            cout<<"*";
-        }
-        cout << endl;
-    }
-
-    // 2nd half
-    for (int row = num-1; row>=1; row--) {
-        // print star
-        for (int cols = 1; cols<=row; cols++){
-            cout<<"*";
-        }
-        // print space
-        for (int cols = 1; cols<=2*num-2*row; cols++){
-            cout<<" ";
-        }
-        // print star
-        for (int cols = 1; cols<=row; cols++){
-            cout<<"*";
-        }
-        cout << endl;
-    }
-
+    cout<<++num<<endl;
+    cout<<--num;
 
     return 0;
 }

@@ -2,25 +2,16 @@
 using namespace std;
 
 int main() {
-    // bitwise operators
-    // & operator
-    int a = 2^3;
-    cout<<a<<endl;
-    // | operator
-    int e = 23|12;
-    cout<<e<<endl;
-    // ~ operator
-    int d = ~5;
-    cout<<d<<endl;
-    // ^ operator
-    int f = 23^12;
-    cout<<f<<endl;
-    // << operator
-    int b = 2<<3;
-    cout<<b<<endl;
-    // >> operator
-    int c = 18>>3;
-    cout<<c<<endl;
+    int num;
+    cout << "Enter the number : ";
+    cin >> num;
+
+    for(int i=1;i<=num;i++){
+        if(i%4==0){
+            continue;
+        }
+        cout<<i<<endl;
+    }
 
     return 0;
 }

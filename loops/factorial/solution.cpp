@@ -9,7 +9,7 @@ int main()
 
     for (int i = 2; i <= num; i++)
     {
-        factorial *= i;
+        factorial *= i; // factorial = factorial * i;
     }
 
     cout << factorial << endl;

@@ -7,7 +7,6 @@ void swap(int &a, int &b) {
     a = b;
     b = c;
 }
-
 int main() {
     int a, b;
     cout << "Enter the value of a: ";
@@ -17,6 +16,5 @@ int main() {
     swap(a, b);
     cout << "a is " << a << endl;
     cout << "b is " << b << endl;
-
-   
+    return 0;
 }

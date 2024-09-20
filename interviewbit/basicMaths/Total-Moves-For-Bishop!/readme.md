@@ -1,0 +1,1 @@
+# [Link](https://www.interviewbit.com/problems/total-moves-for-bishop/)

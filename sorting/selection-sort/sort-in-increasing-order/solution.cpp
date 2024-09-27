@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void selectionSort(char arr[], int n){
+void selectionSort(int arr[], int n){
     for(int i = 0; i<n-1; i++){
         int minIndex = i;
 
@@ -16,7 +16,7 @@ void selectionSort(char arr[], int n){
 
 
 int main() {
-    char arr[6] = {'b','e','d','f','a','c'};
+    int arr[6] = {10,4,1,3,2,7};
 
     cout<<"Before sorting: "<<endl;
     for(int i = 0; i<6; i++){
@@ -26,7 +26,7 @@ int main() {
 
     selectionSort(arr, 6);
 
-    cout<<"After sorting: "<<endl;
+    cout<<"After sorting (Increasing Order) : "<<endl;
     for(int i = 0; i<6; i++){
         cout<<arr[i]<<" ";
     }

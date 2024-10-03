@@ -1,0 +1,27 @@
+name: Update README
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: "*/2 * * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Update date
+        run: |
+          current_date=$(date +"%B %d, %Y")
+          sed -i "s/(Last Updated: [A-Za-z]* [0-9]*, [0-9]*)/(Last Updated: $current_date)/g" README.md
+      - name: Commit changes
+        run: |
+          git config user.name 'Atanu0341'
+          git config user.email 'atanumajumder2004@gmail.com'
+          git commit -am "Update last updated date"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

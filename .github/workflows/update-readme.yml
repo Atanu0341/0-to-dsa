@@ -3,7 +3,7 @@ name: Update README
 on:
   schedule:
     # Run every 2 minutes
-    - cron: "*/2 * * * *"
+    - cron: "0 8 * * *"
 
 permissions:
   contents: write  # Allow push permissions to the repository

@@ -2,8 +2,11 @@ name: Update README
 
 on:
   schedule:
-    # Run daily at 00:00 UTC
+    # Run every 2 minutes
     - cron: "*/2 * * * *"
+
+permissions:
+  contents: write  # Allow push permissions to the repository
 
 jobs:
   update:
@@ -19,7 +22,7 @@ jobs:
         run: |
           git config user.name 'Atanu0341'
           git config user.email 'atanumajumder2004@gmail.com'
-          git commit -am "Update last updated date"
+          git commit -am "Update last updated date" || echo "No changes to commit"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

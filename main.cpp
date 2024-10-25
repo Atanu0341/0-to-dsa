@@ -23,7 +23,7 @@ int binarySearch(int arr[], int n, int target) {
 }
 
 int main() {
-    int arr[10] = {3, 4, 8, 9, 11, 25, 63, 87, 98, 100};
+    int arr[4] = {12,34,67,90};
 
     int target;
 

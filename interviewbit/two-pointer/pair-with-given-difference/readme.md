@@ -1,0 +1,1 @@
+ # [Link](https://www.interviewbit.com/problems/pair-with-given-difference/discussion/p/simple-and-easy-c-solution-using-binary-search-sc-o-1-tc-nlogn/323877/1861/)

@@ -7,7 +7,7 @@ public:
 
         while(start<end){
             if(numbers[start]+numbers[end]==target){
-               ans.push_back(start+1);
+               ans.push_back(start+1); // in question they want 1 based indexing so doing +1
                ans.push_back(end+1);
                return ans;
             }else if(numbers[start]+numbers[end]<target){
